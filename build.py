@@ -49,7 +49,7 @@ def set_rvm_path():
 
 def set_ruby_path():
     rvm_path = '/usr/local/rvm'
-    ruby_path= os.path.join(rvm_path, 'rubies/ruby-2.6.3')
+    ruby_path= os.path.join(rvm_path, 'rubies/ruby-2.6.5')
     ruby_bin = os.path.join(ruby_path, 'bin')
     os.environ['GEM_HOME'] = ruby_path
     set_environ_path(ruby_bin)
