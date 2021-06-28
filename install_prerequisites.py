@@ -26,7 +26,7 @@ def install_rvm_and_ruby():
 
 def install_fpm_gem():
     build.set_ruby_path()
-    cmd = 'rvm reload && rvm use 2.6.3 && gem install -v 1.4.0 fpm'
+    cmd = 'rvm reload && rvm use 2.6.3 && echo $PATH && which gem && gem install -v 1.4.0 fpm'
     build.run_cmd(cmd, unsafe_shell=True, run_env=True, check_rc='fpm gem install failed')
     
     
